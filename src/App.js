@@ -6,6 +6,7 @@ import Movies from './pages/Movies';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import Navigation from './components/Navigation';
 
+
 // 1. 3개의 페이지 필요. 홈페이지, movie, movie detail 페이지
 // 2. 홈페이지에서 배너를 볼 수 있음
 //  2-1. 3가지 섹션의 영화. Top Popular movie / top rated movie / upcoming movie
@@ -19,6 +20,7 @@ import Navigation from './components/Navigation';
 // 5. 영화 정렬 기능
 // 6. 영화 필터링 기능
 function App() {
+
   return (
     <div>
       <Navigation/>
@@ -27,6 +29,7 @@ function App() {
         <Route path="/movies" element={<Movies/>}></Route>
         <Route path="/movies/:id" element={<MovieDetail/>}></Route>
       </Routes>
+
     </div>
   );
 }
